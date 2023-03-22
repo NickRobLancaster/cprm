@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- DAISY UI THEME -->
+<html data-theme="luxury" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- VUE 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- DAISY UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.46.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CPRM</title>
+  </head>
+
+  <body style="font-family: 'Montserrat', sans-serif">
+    <div id="app" class="h-screen over-y-auto bg-white">
+      <div class="h-full w-full">
+        <div
+          class="bg-fixed bg-center bg-cover h-screen bg-[url('./images/page1.jpg')] p-5 text-center"
+        >
+          <p class="text-black italic mt-10 md:mt-32 md:text-xl">
+            “Developing creative risk mitigation and risk transfer solutions for
+            our clients for more than 45 years.”
+          </p>
+
+          <h1 class="text-black font-bold mt-16 text-4xl md:text-7xl md:mt-40">
+            Critical Period Risk Management
+          </h1>
+
+          <p class="text-black font-bold mt-5">
+            a division of Critical Period Insurance Agency Inc. ( CA-0F27266)
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-center bg-cover bg-[url('./images/page2.jpg')] p-8 md:p-12 border-y-4 border-black"
+      >
+        <div class="grid-cols-12 grid">
+          <div class="text-center md:text-left col-span-12">
+            <h1 class="text-3xl text-black mb-10 mt-5 md:mt-0">ABOUT US</h1>
+          </div>
+          <div class="col-span-12 md:col-span-10">
+            <p
+              class="mb-5 md:text-black text-justify md:text-left p-5 md:p-0 bg-gray-900 bg-opacity-70 md:bg-transparent text-white"
+            >
+              Critical Period Risk Management (“CPRM”) is the Risk Management
+              Division of Critical Period Insurance Agency Inc. (“CPIA”). For
+              more than 45 years, our management team has been recognized
+              worldwide by major OEMs, insurance companies and Fortune 500
+              companies for being innovators of custom risk management
+              solutions. The byproduct of many of our engagements is the
+              creation of new, first-of-a-kind, insurance policies and
+              off-balance-sheet risk transfer solutions to address our client’s
+              recurring risks and exposures. We are a quiet company, and we
+              receive most of our engagements through client referrals. Due to
+              the confidential nature of our engagements, we offer only general
+              information regarding our practice online. The major emphasis of
+              our practice today is in cybersecurity solutions wherein CPRM has
+              formed a cybersecurity consortium with Lookout Inc. and AppGuard
+              Inc. to help clients manage and control their cyber risk exposures
+              with state-of-the-art, best-in-glass, cybersecurity software
+              technology. CPRM’s risk management engagements have included.
+            </p>
+
+            <ul
+              class="list-disc lg:text-black mb-5 lg:bg-transparent bg-sky-900 text-white lg:pl-4 p-4 pl-10 pr-5 py-5 bg-opacity-70"
+            >
+              <li>
+                Cybersecurity [endpoints, servers, cloud, mobile] Enterprise –
+                OEM – Local Government - Consumer
+              </li>
+              <li>MobileSafePlace.com™</li>
+              <li>ComputerSafePlace.com™</li>
+              <li>Data Transmission</li>
+              <li>Solar Power Production & Performance</li>
+              <li>Electric Power Transmission</li>
+              <li>Wind Turbine Performance</li>
+              <li>Green Energy Infrastructure Servicing Platforms</li>
+              <li>OEM Insured Warranty Risk Transfer</li>
+              <li>Credit Enhancement Insurance</li>
+            </ul>
+
+            <div class="grid grid-cols-6">
+              <ul
+                class="col-span-6 md:col-span-3 mb-5 bg-blue-900 text-white p-5 bg-opacity-70"
+              >
+                <li>
+                  <span class="font-bold">Contact Us: </span
+                  ><a
+                    href="mailto:INFO@CPRM.US"
+                    class="text-blue-500 md:bg-none bg-white px-1"
+                    >INFO@CPRM.US</a
+                  >
+                </li>
+                <li>
+                  <span class="font-bold">Telephone: </span
+                  ><a
+                    href="tel:17605054426"
+                    class="text-blue-500 md:bg-none bg-white px-1"
+                    >1+760-505-4426</a
+                  >
+                </li>
+                <li>Critical Period Insurance Agency Inc.</li>
+                <li>
+                  State of California Department of Insurance License Number
+                  (CA-0F27266)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:p-12 p-8 bg-slate-700">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
+          <h1
+            class="text-white col-span-2 md:col-span-5 text-3xl mb-8 text-center md:text-left mt-5 md:mt-0"
+          >
+            CLIENTS
+          </h1>
+          <div
+            v-for="img in imagesArr"
+            class="col-span-1 flex justify-center items-center bg-white"
+          >
+            <img :src="img" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          websiteName: "Critical Period Risk Management",
+          imageSection1: "./images/page1.jpg",
+          imageArr: [],
+        };
+      },
+      computed: {
+        imagesArr() {
+          const imageCount = 30;
+
+          for (let i = 1; i <= imageCount; i++) {
+            this.imageArr.push(`./images/cprm${i}.png`);
+          }
+
+          return this.imageArr;
+        },
+      },
+    }).mount("#app");
+  </script>
+</html>
